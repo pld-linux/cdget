@@ -5,14 +5,14 @@ Version:	0.2.3
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://trasdocka.hemmet.chalmers.se/cdget/%{name}-%{version}.tar.bz2
+Source0:	http://www.dtek.chalmers.se/~d00freed/cdget/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	47a325319d41e819507079598373fe41
-URL:		http://trasdocka.hemmet.chalmers.se/cdget/index.shtml
+Patch0:		%{name}-am18.patch
+URL:		http://www.dtek.chalmers.se/~d00freed/cdget/
 BuildRequires:	id3lib
-BuildRequires:	qt-devel >= 3.1
-Requires:	dctc
+BuildRequires:	qt-devel >= 3.1.1
+Requires:	dctc >= 0.84.1
 Requires:	id3lib
-Requires:	qt >= 3.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,13 +35,19 @@ rêcznej kontroli nad procesem ¶ci±gania.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
