@@ -1,9 +1,9 @@
 Summary:	Client for mp3 file sharing on the Internet
-Summary(pl):	Klient do udostêpniania plików mp3 w Internecie
+Summary(pl):	Klient pozwalaj±cy na udostêpnianie plików mp3 w Internecie
 Name:		cdget
 Version:	0.2.3
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications
 Source0:	http://trasdocka.hemmet.chalmers.se/cdget/%{name}-%{version}.tar.bz2
 URL:		http://trasdocka.hemmet.chalmers.se/cdget/index.shtml
@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING README TODO
+%doc AUTHORS README TODO
 %attr(755,root,root) %{_bindir}/*
