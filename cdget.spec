@@ -1,5 +1,5 @@
 Summary:	Client for mp3 file sharing on the Internet
-Summary(pl):	Klient udostepniania plików mp3 w Internecie
+Summary(pl):	Klient do udostêpniania plików mp3 w Internecie
 Name:		cdget
 Version:	0.2.3
 Release:	1
@@ -7,12 +7,12 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://trasdocka.hemmet.chalmers.se/cdget/%{name}-%{version}.tar.bz2
 URL:		http://trasdocka.hemmet.chalmers.se/cdget/index.shtml
-BuildRequires:	qt-devel >= 3.1
 BuildRequires:	id3lib
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Requires:	qt >= 3.1
+BuildRequires:	qt-devel >= 3.1
 Requires:	dctc
 Requires:	id3lib
+Requires:	qt >= 3.1
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 CdGet is not just another client for mp3 file sharing on the Internet.
@@ -24,7 +24,7 @@ automatization! CdGet is meant to do exactly this, and eliminate the
 need for manual control over the download process.
 
 %description -l pl
-CdGet nie jest kolejnym klientem slu¿±cym do wymiany plików mp3
+CdGet nie jest kolejnym klientem s³u¿±cym do wymiany plików mp3
 poprzez Internet. CdGet zosta³ stworzony by zrobiæ wszystko za ciebie.
 W tradycyjnym kliencie udostêpniania/¶ci±gania plików czêsto zachodzi
 potrzeba obserwowania i ingerowania w proces ¶ci±gania. Proces ten
@@ -42,6 +42,7 @@ rêcznej kontroli nad procesem ¶ci±gania.
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
