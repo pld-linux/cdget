@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://trasdocka.hemmet.chalmers.se/cdget/%{name}-%{version}.tar.bz2
+# Source0-md5:	47a325319d41e819507079598373fe41
 URL:		http://trasdocka.hemmet.chalmers.se/cdget/index.shtml
 BuildRequires:	id3lib
 BuildRequires:	qt-devel >= 3.1
