@@ -9,6 +9,8 @@ Source0:	http://www.dtek.chalmers.se/~d00freed/cdget/download/%{name}-%{version}
 # Source0-md5:	47a325319d41e819507079598373fe41
 Patch0:		%{name}-am18.patch
 URL:		http://www.dtek.chalmers.se/~d00freed/cdget/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	id3lib
 BuildRequires:	qt-devel >= 3.1.1
 Requires:	dctc >= 0.84.1
