@@ -1,5 +1,5 @@
 Summary:	Client for MP3 file sharing on the Internet
-Summary(pl.UTF-8):   Klient pozwalający na udostępnianie plików MP3 w Internecie
+Summary(pl.UTF-8):	Klient pozwalający na udostępnianie plików MP3 w Internecie
 Name:		cdget
 Version:	0.2.3
 Release:	1
