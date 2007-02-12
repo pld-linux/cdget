@@ -1,5 +1,5 @@
 Summary:	Client for MP3 file sharing on the Internet
-Summary(pl):	Klient pozwalaj±cy na udostêpnianie plików MP3 w Internecie
+Summary(pl.UTF-8):   Klient pozwalajÄ…cy na udostÄ™pnianie plikÃ³w MP3 w Internecie
 Name:		cdget
 Version:	0.2.3
 Release:	1
@@ -26,14 +26,14 @@ mechanical, repetitive and boring, a perfect candidate for
 automatization! CdGet is meant to do exactly this, and eliminate the
 need for manual control over the download process.
 
-%description -l pl
-CdGet nie jest kolejnym klientem s³u¿±cym do wymiany plików MP3
-poprzez Internet. CdGet zosta³ stworzony by zrobiæ wszystko za ciebie.
-W tradycyjnym kliencie udostêpniania/¶ci±gania plików czêsto zachodzi
-potrzeba obserwowania i ingerowania w proces ¶ci±gania. Proces ten
-jest zazwyczaj mechaniczny, powtarzaj±cy siê i nudny, idealny do
-zautomatyzowania. CdGet ma robiæ w³a¶nie to, wyeliminowaæ potrzebê
-rêcznej kontroli nad procesem ¶ci±gania.
+%description -l pl.UTF-8
+CdGet nie jest kolejnym klientem sÅ‚uÅ¼Ä…cym do wymiany plikÃ³w MP3
+poprzez Internet. CdGet zostaÅ‚ stworzony by zrobiÄ‡ wszystko za ciebie.
+W tradycyjnym kliencie udostÄ™pniania/Å›ciÄ…gania plikÃ³w czÄ™sto zachodzi
+potrzeba obserwowania i ingerowania w proces Å›ciÄ…gania. Proces ten
+jest zazwyczaj mechaniczny, powtarzajÄ…cy siÄ™ i nudny, idealny do
+zautomatyzowania. CdGet ma robiÄ‡ wÅ‚aÅ›nie to, wyeliminowaÄ‡ potrzebÄ™
+rÄ™cznej kontroli nad procesem Å›ciÄ…gania.
 
 %prep
 %setup -q
