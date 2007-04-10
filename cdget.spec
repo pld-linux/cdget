@@ -12,7 +12,7 @@ URL:		http://www.dtek.chalmers.se/~d00freed/cdget/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	id3lib
-BuildRequires:	qt-devel >= 3.1.1
+BuildRequires:	qt-devel >= 6:3.1.1
 Requires:	dctc >= 0.84.1
 Requires:	id3lib
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
